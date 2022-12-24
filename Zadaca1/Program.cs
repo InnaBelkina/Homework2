@@ -5,4 +5,16 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int a = number % 100;
 int b = a / 10;
-Console.WriteLine(b);
+
+if (number > 999)
+{
+    Console.WriteLine("Ошибка");
+}
+else if (number < 100)
+{
+     Console.WriteLine("Ошибка");
+}
+else
+{
+    Console.WriteLine(b);
+}
